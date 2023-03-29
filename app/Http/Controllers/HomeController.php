@@ -24,9 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // Kode Sebelum Diubah
+        // Kode Sebelum Diubah Praktikum 3
         // return view('home');
+
+        // Kode Sebelum Diubah pada Praktikum 4 No 5
+        // $user = Auth::user();
+        // return view('home',['user'=>$user]);
+
+        // Kode yang diubah / tambahkan untuk Praktikum 4 No 5
         $user = Auth::user();
-        return view('home',['user'=>$user]);
+        return view('index3',['user'=>$user]);
     }
 }
